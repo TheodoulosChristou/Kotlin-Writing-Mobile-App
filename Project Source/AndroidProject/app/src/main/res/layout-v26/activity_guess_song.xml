@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:id="@+id/root_layout"
+    tools:context=".GuessSong">
+
+    <EditText
+        android:id="@+id/songText"
+        android:layout_width="319dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="476dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/typeTheSongHint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessSongTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/guessSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/guessSongTitle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:onClick="clickGuessButton"
+        android:text="@string/guessButton"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#020000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songText"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <Button
+        android:id="@+id/giveUpButton"
+        android:layout_width="130dp"
+        android:layout_height="58dp"
+        android:text="@string/giveUpButton"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#020000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/guessButton"
+        app:layout_constraintTop_toBottomOf="@+id/songText"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <TextView
+        android:id="@+id/triesTitle"
+        android:layout_width="178dp"
+        android:layout_height="52dp"
+        android:text="@string/triesAttempt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessButton"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/pointLabel"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:text="@string/pointsLabel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triesTitle"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <TextView
+        android:id="@+id/yourPoints"
+        android:layout_width="52dp"
+        android:layout_height="40dp"
+        android:text="@string/tP"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toEndOf="@+id/pointLabel"
+        app:layout_constraintTop_toBottomOf="@+id/giveUpButton"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TextView
+        android:id="@+id/tryText"
+        android:layout_width="71dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="@string/tries"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/triesTitle"
+        app:layout_constraintTop_toBottomOf="@+id/giveUpButton"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <EditText
+        android:id="@+id/artistText"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="@string/typeTheArtistHint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songText"
+        app:layout_constraintVertical_bias="0.11" />
+</androidx.constraintlayout.widget.ConstraintLayout>

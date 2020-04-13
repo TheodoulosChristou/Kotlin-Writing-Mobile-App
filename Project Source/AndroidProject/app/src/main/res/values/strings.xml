@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="title_activity_shop"></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="play">PLAY</string>
+    <string name="shop">SHOP</string>
+    <string name="find_songs">FIND SONGS</string>
+    <string name="DESC1">Your application should place random points on a map that a user has to walk to in order to collect a line of a song lyric. At any time, a user can attempt to guess the title and artist of a song once a lyric line has been collected</string>
+    <string name="DESC2">The game will have two modes, ‘Classic’ or ‘Current’, with Classic being a mode based on songs that have been popular over the last 50 years, while Current will be a list of songs taken from weekly sales data on the week beginning on the 30th September.</string>
+    <string name="nextButton">NEXT</string>
+    <string name="giveUpTitle">Give Up</string>
+    <string name="songGiveItUp">Song:</string>
+    <string name="artistGiveItUp">Artist:</string>
+    <string name="gainedPointsGiveItUp">Gained Points</string>
+    <string name="gainedPointsGiveUp">    0</string>
+    <string name="lostPointsGiveItUp">Lost Points</string>
+    <string name="totalPoints">Your Points</string>
+    <string name="nextSong">NEXT SONG</string>
+    <string name="guessSongTitle">  Guess Song</string>
+    <string name="typeTheSong"></string>
+    <string name="typeTheSongHint">Type the Song</string>
+    <string name="typeTheArtist"></string>
+    <string name="typeTheArtistHint">Type the Artist</string>
+    <string name="guessButton">GUESS</string>
+    <string name="giveUpButton">GIVE UP</string>
+    <string name="triesAttempt">Attempts To Guess The Song:</string>
+    <string name="tries">  0</string>
+    <string name="pointsLabel">Your Points:</string>
+    <string name="tP">    0</string>
+    <string name="lyricsLabel">Lyrics Of The Song</string>
+    <string name="lyrics"> </string>
+    <string name="answerLabel">Answer</string>
+    <string name="songAnswerLabel">Song:</string>
+    <string name="artistAnswerLabel">Artist:</string>
+    <string name="gameModeLabel">Game Mode:</string>
+    <string name="classic">Classic</string>
+    <string name="current">Current</string>
+    <string name="settings">Settings</string>
+    <string name="save">SAVE</string>
+    <string name="buy">BUY</string>
+    <string name="aboutInfoShop">About Artist/Artists</string>
+    <string name="pointsShop">Points: 40</string>
+
+
+</resources>
